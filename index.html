@@ -22,11 +22,28 @@
             </h2>
             <input type="button" value="MaJor" style="color: white; font-size: 50pt; width: 80%;
              height: 50%; background-color: darkred;position: relative; top: 0; left: 10%;"
-              onclick="changered(15)">
+              onclick="changered(15)" class="desktop">
              <input type="button" value="Minor" style="color: white; font-size: 50pt; width: 80%;
              height: 50%; background-color: darkred;position: relative; top: 80%; left: 10%;
-             "
+             " class="desktop"
               onclick="changered(5)">
+            
+            <input type="button" value="MaJor" style="color: white; font-size: 50pt; width: 80%;
+             height: 50%; background-color: darkred;position: relative; top: 0; left: 10%;"
+              onclick="changered(15)" class="phone">
+             <input type="button" value="Minor" style="color: white; font-size: 50pt; width: 80%;
+             height: 50%; background-color: darkred;position: relative; top: 80%; left: 10%;
+             " class="phone"
+              onclick="changered(5)">
+            <style>
+            	.desktop {display: block; }
+                .phone {display: none; }
+                
+                @media (max-width: 768px){
+                .phone {display: block; }
+                .desktop {display: none; }
+            </style>
+                
         </main>
         <aside>
             <h1 style="color: white; text-align: center; font-size: 50pt;">Penalty</h1>
