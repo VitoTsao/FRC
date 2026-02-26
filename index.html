@@ -29,10 +29,10 @@
               onclick="changered(5)">
             
             <input type="button" value="MaJor" style="color: white; font-size: 50pt; width: 80%;
-             height: 50%; background-color: darkred;position: relative; top: 0; left: 10%;"
+             height: 400pt; background-color: darkred;position: relative; top: 0; left: 10%;"
               onclick="changered(15)" class="phone">
              <input type="button" value="Minor" style="color: white; font-size: 50pt; width: 80%;
-             height: 50%; background-color: darkred;position: relative; top: 80%; left: 10%;
+             height: 400pt; background-color: darkred;position: relative; top: 80%; left: 10%;
              " class="phone"
               onclick="changered(5)">
             <style>
@@ -52,10 +52,26 @@
             </h2>
             <input type="button" value="MaJor" style="color: white; font-size: 50pt; width: 80%;
              height: 50%; background-color: darkblue;position: relative; top: 0; left: 10%;"
-              onclick="changeblue(15)">
+              onclick="changeblue(15)" class="desktop">
              <input type="button" value="Minor" style="color: white; font-size: 50pt; width: 80%;
              height: 50%; background-color: darkblue;position: relative; top: 80%; left: 10%;"
-              onclick="changeblue(5)">
+              onclick="changeblue(5)" class="desktop>
+            
+            <input type="button" value="MaJor" style="color: white; font-size: 50pt; width: 80%;
+             height: 50%; background-color: darkblue;position: relative; top: 0; left: 10%;"
+              onclick="changeblue(15)" class="phone">
+             <input type="button" value="Minor" style="color: white; font-size: 50pt; width: 80%;
+             height: 50%; background-color: darkblue;position: relative; top: 80%; left: 10%;"
+              onclick="changeblue(5)" class="phone">
+            
+            <style>
+            	.desktop {display: block; }
+                .phone {display: none; }
+                
+                @media (max-width: 768px){
+                .phone {display: block; }
+                .desktop {display: none; }
+            </style>
         </aside>
         <script>
         let red = 0;
