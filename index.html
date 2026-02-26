@@ -23,7 +23,7 @@
             </h2>
             
             <h1 style="color: white; text-align: center; font-size: 40pt;" class="phone">Penalty</h1>
-            <h2 style="color: white; text-align: center; font-size: 40pt;" id="red-number" class="phone">
+            <h2 style="color: white; text-align: center; font-size: 40pt;" id="red-number2" class="phone">
                 0
             </h2>
             
@@ -60,7 +60,7 @@
             </h2>
             
             <h1 style="color: white; text-align: center; font-size: 40pt;" class="phone">Penalty</h1>
-            <h2 style="color: white; text-align: center; font-size: 40pt;" id="blue-number" class="phone">
+            <h2 style="color: white; text-align: center; font-size: 40pt;" id="blue-number2" class="phone">
                 0
             </h2>
             <input type="button" value="MaJor" style="color: white; font-size: 50pt; width: 80%;
@@ -91,12 +91,12 @@
         let red = 0;
         function changered(amount) {
             red=red+amount; 
-            document.getElementById("red-number").innerText = red;
+            document.getElementById("red-number","red-number2").innerText = red;
         }
         let blue = 0;
         function changeblue(amount) {
             blue=blue+amount;
-        document.getElementById("blue-number").innerText = blue; }
+        document.getElementById("blue-number","blue-number2").innerText = blue; }
         function setzero() {
             blue=0; 
             red=0;
